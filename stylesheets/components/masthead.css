@@ -1,1 +1,96 @@
 /* Your code here */
+.masthead {
+    display: grid;
+    grid-template-areas:
+        "menu-search . actions"
+        ". technologies ."
+        "date logo paper";
+}
+
+.masthead__menu-and-search{
+    grid-area: menu-search;
+
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.menu-and-search__icon{
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.menu-and-search__icon:hover{
+    background-color: #f7f7f5;
+}
+
+.masthead__actions{
+    grid-area: actions;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end   ;
+    padding: 16px 0;
+}
+
+.masthead__technologies{
+    grid-area: technologies;
+    display: flex;
+    justify-content: center;
+}
+
+.technologies__container{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    position: relative;
+    top: 1px;
+    background-color: white;
+}
+
+.technologies__text{
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6f6f6f;
+    text-align: center;
+    margin: 0 8px;
+
+}
+
+.masthead__date{
+    grid-area: date;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    padding-bottom: 11px;
+
+}
+
+.masthead__logo{
+    grid-area: logo;
+    padding-top: 16px;
+
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+
+    padding-bottom: 11px;
+}
+
+.masthead__paper{
+    grid-area: paper;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 11px;
+
+}
+
+.fa-cog:hover{
+    cursor: pointer;
+}

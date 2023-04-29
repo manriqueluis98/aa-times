@@ -1,1 +1,354 @@
 <!-- Your code here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Academy Times</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/main-styles.css">
+    <script src="scripts/event-handling.js"></script>
+</head>
+<body>
+    <header>
+        <div class="masthead">
+            <div class="masthead__menu-and-search">
+                <div class="menu-and-search__icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <div class="menu-and-search__icon">
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <div class="search-modal search-modal--hidden">
+                    <input type="search" class="search-modal__input" placeholder="Search">
+                    <button class="search-model__go">Go</button>
+                  </div>
+            </div>
+            <div class="masthead__actions">
+                <button>Suscribe Now</button>
+                <button>Log In</button>
+                <div>
+                    <i class="fas fa-cog"></i>
+                </div>
+
+                <div class="pref pref--hidden">
+                    <div class="pref__section">
+                      <div class="pref__section-header">Edition</div>
+                      <ul>
+                        <li class="pref__section-link"><a href="#">CSS</a></li>
+                        <li class="pref__section-link"><a href="#">HTML</a></li>
+                        <li class="pref__section-link"><a href="#">JavaScript</a></li>
+                        <li class="pref__section-link"><a href="#">Python</a></li>
+                      </ul>
+                    </div>
+                    <div class="pref__section">
+                      <div class="pref__section-header">Help</div>
+                      <ul>
+                        <li class="pref__section-link"><a href="#">FAQ</a></li>
+                        <li class="pref__section-link"><a href="#">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="masthead__technologies">
+                <div class="technologies__container">
+                    <span class="technologies__text">CSS</span>
+                    <span class="technologies__text">HTML</span>
+                    <span class="technologies__text">JavaScript</span>
+                    <span class="technologies__text">Python</span>
+                </div>
+
+            </div>
+            <div class="masthead__date">Tuesday, October 31, 2020</div>
+            <div class="masthead__logo">
+                <img src="/images/AA_Times_Logo.png">
+            </div>
+            <div class="masthead__paper">
+                <div>
+                    <i class="far fa-newspaper"></i>
+                    Today's paper
+                </div>
+            </div>
+        </div>
+
+        <nav class="main__nav">
+            <ul>
+                <li><a href="/">World</a></li>
+                <li><a href="/">SWE Online</a></li>
+                <li><a href="/">San Francisco</a></li>
+                <li><a href="/">New York</a></li>
+                <li><a href="/">Jumpstart</a></li>
+                <li><a href="/">Marketing</a></li>
+                <li><a href="/">Sales</a></li>
+                <li><a href="/">TalentMatch</a></li>
+                <li><a href="/">Alumni</a></li>
+                <li><a href="/">All</a></li>
+            </ul>
+        </nav>
+
+        <section class="interest-links">
+            <div class="interest-bar__image">
+                <img src="/images/dog.png">
+            </div>
+            <div class="interest-bar__story">
+                <div class="story__title">Dog Programmers</div>
+                <div class="story__desc">Dogs are learning to code at an incredible pace.</div>
+            </div>
+            <div class="interest-bar__image">
+                <img src="/images/cat.png">
+
+            </div>
+            <div class="interest-bar__story">
+                <div class="story__title">Cats and Coding</div>
+                <div class="story__desc">Cats are on the rise as the #1 example for coding demos.</div>
+            </div>
+            <div class="interest-bar__image">
+                <img src="/images/plug.png" alt="">
+            </div>
+            <div class="interest-bar__story">
+                <div class="story__title">Plugging stuff In</div>
+                <div class="story__desc">Good or Bad? Find out now.</div>
+            </div>
+
+            <div class="interest-bar__stock">
+                <div class="stock__row">
+                    <span>AAO</span>
+                    <div class="interest-bar__price">+100%</div>
+                </div>
+                <div class="stock__row">
+                    <span>SWE</span>
+                    <div class="interest-bar__price">+150%</div>
+                </div>
+                <div class="stock__row">
+                    <span>CAT</span>
+                    <div class="interest-bar__price">+111%</div>
+                </div>
+            </div>
+
+            <div class="interest-bar__image">
+                <img src="/images/sun-icon.png">
+            </div>
+            <div class="interest-bar__weather">
+                <span>77°F</span>
+            </div>
+
+        </section>
+    </header>
+    <main>
+
+        <div class="articles__container">
+            <div class="container__left">
+                <article class="main__article grid__top">
+                    <header class="article__header">
+                        <h1 class="article__title ">How App Academy Students Change Their Lives</h1>
+                    </header>
+                    <div class="main__left">
+                        <article class="article">
+                            <header class="article__header">
+                                <h1 class="article__title main-left__title">App Academy Instructors on React & Redux
+                                </h1>
+                                <h2 class="article__byline">
+                                    By <span class="article__author">APP ACADEMY INSTRUCTIONAL TEAM</span>
+                                </h2>
+                            </header>
+
+                            <p class="article__content">
+                                <ul class="article__bullets">
+                                    <li>It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.
+                                    </li>
+                                    <li>The whole state of your app is stored in an object tree inside a single store.
+                                        The only way to change the state tree is to emit an action, an object describing what happened. To specify how the actions transform the state tree, you write pure reducers.
+                                    </li>
+                                </ul>
+                            </p>
+
+                            <p class="article__comments">
+                                1738 Comments
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="main__right">
+                        <iframe src="https://player.vimeo.com/video/380193367" width="480"
+                        height="280" frameborder="0" allow="autoplay; fullscreen"
+                        allowfullscreen></iframe>
+
+                        <p class="video__underneath">Warning: This video will make you want to change your career
+                        </p>
+                    </div>
+                </article>
+
+                <article class="article grid__left">
+                    <header class="article__header">
+                        <h1 class="article__title">Where Are They Now?
+                        </h1>
+                        <h2 class="article__byline">
+                            By <span class="article__author">APP ACADEMY ALUMNI</span>
+                        </h2>
+                    </header>
+
+                    <p class="article__content">
+                        First hand stories from App Academy graduates about transitioning to engineering positions at top tech companies in San Francisco.
+
+                    </p>
+                </article>
+
+                <article class="article grid__right">
+                    <header class="article__header">
+                        <h1 class="article__title">Cat Academy</h1>
+                        <h2 class="article__byline">
+                            By <span class="article__author">
+                                APP ACADEMY DIRECTOR OF PRODUCTS
+                            </span>
+                        </h2>
+
+                    </header>
+
+                    <p class="article__content">
+                        App Academy's latest product targets those interested in owning the popular feline companion by providing a curated cat care curriculum. Breakfast, Markov, Curie, Jet, and Freyja are all modern day celebrities due to their App Academy example fame.
+
+                    </p>
+                </article>
+            </div>
+
+            <div class="container__right">
+                <article class="article article__opinions">
+                    <header class="article__header">
+                        <h1 class="article__title opinions__title">Opinions</h1>
+                        <h2 class="article__byline">
+                            By <span class="article__author">Breakfast the Cat</span>
+
+                        </h2>
+                    </header>
+
+                    <p class="article__content">
+                        <h2 class="article__question">Will Javascript ever be as easy as Python?</h2>
+                        <p class="article__answer">JavaScript continues to advance with the newly released EcmaScript8 but it still doesn't quite read like Python.
+                        </p>
+                    </p>
+
+                    <p class="article__comments">
+                        299 Comments
+                    </p>
+                </article>
+
+                <article class="article article__operations">
+                    <header class="article__header">
+                        <h2 class="article__tag">OPERATIONS</h2>
+                        <h1  class="article__title operations__title">App Academy New York Has A Brand New Office
+                        </h1>
+                        <h2 class="article__byline">
+                            By <span class="article__author">NY OPERATIONS</span>
+                        </h2>
+                    </header>
+
+                    <img src="/images/new_office.jpg" class="operations__image">
+
+                    <p class="article__content">
+                        The new space features hardwood floors and brick walls for a modern technology space with an aura for learning.
+
+                    </p>
+
+                    <p class="article__comments">
+                        172 Comments
+                    </p>
+                </article>
+
+                <div class="extras">
+                    <article class="extra-article">
+                        <header class="extra-article__header">
+                            <h3 class="extra-article__character">
+                                Torvalds
+                            </h3>
+                        </header>
+
+                        <h2 class="extra-article__content">
+                            I Was Almost Wrong
+                        </h2>
+                    </article>
+
+                    <article class="extra-article">
+                        <header class="extra-article__header">
+                            <h3 class="extra-article__character">
+                                Knuth
+                            </h3>
+                        </header>
+
+                        <h2 class="extra-article__content">
+                            Art of Programming
+                        </h2>
+                    </article>
+
+                    <article class="extra-article">
+                        <header class="extra-article__header">
+                            <h3 class="extra-article__character">
+                                Lovelace
+                            </h3>
+                        </header>
+
+                        <h2 class="extra-article__content">
+                            The First Algorithm
+                        </h2>
+                    </article>
+
+                    <article class="extra-article">
+                        <header class="extra-article__header">
+                            <h3 class="extra-article__character">
+                                Hopper
+                            </h3>
+                        </header>
+
+                        <h2 class="extra-article__content">
+                            The First Bug
+                        </h2>
+                    </article>
+
+                    <article class="extra-article">
+                        <header class="extra-article__header">
+                            <h3 class="extra-article__character">
+                                Thompson
+                            </h3>
+                        </header>
+
+                        <h2 class="extra-article__content">
+                            Go C Unix
+                        </h2>
+                    </article>
+
+                    <article class="extra-article">
+                        <header class="extra-article__header">
+                            <h3 class="extra-article__character">
+                                Carmack
+                            </h3>
+                        </header>
+
+                        <h2 class="extra-article__content">
+                            My Virtual Reality
+                        </h2>
+                    </article>
+
+                    <article class="extra-article">
+                        <header class="extra-article__header">
+                            <h3 class="extra-article__character">
+                                Stallman
+                            </h3>
+                        </header>
+
+                        <h2 class="extra-article__content">
+                            Free Speech Not Free Coffee
+                        </h2>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <footer></footer>
+
+</body>
+</html>

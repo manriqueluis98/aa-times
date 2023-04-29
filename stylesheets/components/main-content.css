@@ -1,1 +1,198 @@
 /* Your code here */
+
+.articles__container{
+    display: grid;
+    grid-template-areas:
+    "left left right"
+    ". . right";
+    grid-gap: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container__right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main__nav, .interest-links{
+        display: none;
+    }
+}
+
+.container__left{
+    grid-area: left;
+    display: grid;
+    grid-template-areas:
+    "top top top"
+    "left right right";
+}
+
+.container__right{
+    grid-area: right;
+}
+
+.grid__top{
+    grid-area: top;
+}
+
+.grid__left{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    grid-area: left;
+    padding: 1rem 0.5rem;
+    padding-top: 0;
+    padding-bottom: 3rem;
+}
+
+
+
+
+.grid__right{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem 0.5rem;
+    padding-top: 0;
+    grid-area: right;
+    border-left: 1px solid #e2e2e2;
+}
+
+.article__header{
+    text-align: left;
+    margin: 0;
+    padding: 0.5rem 0;
+
+}
+.article__title{
+    font-weight: bold;
+}
+
+.article__byline{
+    color: #6f6f6f;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article__content{
+    font-size: 14px;
+}
+
+ul.article__bullets{
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+.article__bullets > li {
+    margin: 1rem 0;
+    text-align: justify;
+    font-size: 14px;
+}
+
+
+
+
+.extra-article__character{
+    color: #6f6f6f;
+    font-size: 14px;
+}
+
+.main__article{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "left right";
+    padding-bottom: 2rem;
+}
+
+.main__left {
+    padding-right: 2rem;
+}
+
+.video__underneath{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main__article > .article__header{
+    grid-area: header;
+    font-size: 24px;
+
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+}
+
+
+h1.opinions__title{
+    font-size: 24px;
+    padding-bottom: 0.5rem;
+}
+
+.article__question{
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.article__answer{
+    font-size: 14px;
+}
+
+.article__comments{
+    color: #4d7b9f;
+
+    font-size: 12px;
+    margin: 1rem 0;
+}
+
+.container__right > .article {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.article__tag{
+    font-size: 14px;
+}
+
+.operations__title{
+    margin: 1rem 0;
+}
+
+.operations__image{
+    height: 100px;
+    object-fit: cover;
+}
+
+.article__opinions{
+    border-left: 1px solid #e2e2e2;
+    padding-left: 1rem;
+}
+
+.article__operations{
+    border-left: 1px solid #e2e2e2;
+    padding-left: 1rem;
+
+}
+
+.extras{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-left: 1px solid #e2e2e2;
+    padding-left: 1rem;
+}
+
+.extra-article__header{
+    padding: 0;
+    margin: 0;
+}
+
+.extra-article__content{
+    font-weight: bold;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 0.5rem;
+}
+
+
+.main-left__title{
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}

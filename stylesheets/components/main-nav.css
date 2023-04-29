@@ -1,1 +1,18 @@
 /* Your code here */
+
+
+nav.main__nav{
+    text-align: center;
+    padding: 16px 0;
+}
+
+.main__nav>ul{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main__nav>ul>li{
+    font-weight: bold;
+    font-size: 12px;
+}

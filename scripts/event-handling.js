@@ -1,10 +1,20 @@
+let cogClicked = false;
+
 window.addEventListener('DOMContentLoaded', () => {
   console.log('event-handling.js script was successfully loaded');
   const cogIcon = document.querySelector('.fas.fa-cog');
+
   cogIcon.addEventListener('click', event => {
     console.log('Gear clicked');
     event.stopPropagation();
-    document.querySelector('.pref').classList.remove('pref--hidden');
+
+    if(!cogClicked){
+      document.querySelector('.pref').classList.remove('pref--hidden');
+      cogClicked = true;
+    }else{
+      document.querySelector('.pref').classList.add('pref--hidden');
+      cogClicked = false;
+    }
   });
 
   window.addEventListener('click', () => {
